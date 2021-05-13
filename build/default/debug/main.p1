@@ -1,0 +1,1494 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"457 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\PIC18F4520.h
+[s S23 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S23 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"467
+[s S24 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S24 . T1OSO T1OSI CCP1 SCK SDI SDO TX RX ]
+"477
+[s S25 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S25 . T13CKI CCP2 . SCL SDA . CK DT ]
+"487
+[s S26 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S26 . T1CKI . P1A ]
+"492
+[s S27 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S27 . . PA2 PA1 ]
+"456
+[u S22 `S23 1 `S24 1 `S25 1 `S26 1 `S27 1 ]
+[n S22 . . . . . . ]
+"498
+[v _PORTCbits `VS22 ~T0 @X0 0 e@3970 ]
+"781
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . RE0 RE1 RE2 RE3 ]
+"787
+[s S35 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S35 . RD WR CS MCLR ]
+"793
+[s S36 :1 `uc 1 ]
+[n S36 . NOT_RD ]
+"796
+[s S37 :1 `uc 1 :1 `uc 1 ]
+[n S37 . . NOT_WR ]
+"800
+[s S38 :2 `uc 1 :1 `uc 1 ]
+[n S38 . . NOT_CS ]
+"804
+[s S39 :3 `uc 1 :1 `uc 1 ]
+[n S39 . . NOT_MCLR ]
+"808
+[s S40 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S40 . nRD nWR nCS nMCLR ]
+"814
+[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S41 . AN5 AN6 AN7 VPP ]
+"820
+[s S42 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S42 . PD2 PC2 CCP10 CCP9E ]
+"826
+[s S43 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S43 . RDE WRE PB2 PC3E ]
+"780
+[u S33 `S34 1 `S35 1 `S36 1 `S37 1 `S38 1 `S39 1 `S40 1 `S41 1 `S42 1 `S43 1 ]
+[n S33 . . . . . . . . . . . ]
+"833
+[v _PORTEbits `VS33 ~T0 @X0 0 e@3972 ]
+[p mainexit ]
+"2144
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"1922
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"2366
+[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
+"1478
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"451
+[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
+"4697
+[s S185 :4 `uc 1 :2 `uc 1 ]
+[n S185 . PCFG VCFG ]
+"4701
+[s S186 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S186 . PCFG0 PCFG1 PCFG2 PCFG3 VCFG0 VCFG1 ]
+"4709
+[s S187 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S187 . . CHSN3 VCFG01 VCFG11 ]
+"4696
+[u S184 `S185 1 `S186 1 `S187 1 ]
+[n S184 . . . . ]
+"4716
+[v _ADCON1bits `VS184 ~T0 @X0 0 e@4033 ]
+"4626
+[s S182 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S182 . ADCS ACQT . ADFM ]
+"4632
+[s S183 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S183 . ADCS0 ADCS1 ADCS2 ACQT0 ACQT1 ACQT2 ]
+"4625
+[u S181 `S182 1 `S183 1 ]
+[n S181 . . . ]
+"4641
+[v _ADCON2bits `VS181 ~T0 @X0 0 e@4032 ]
+"4782
+[s S189 :1 `uc 1 :1 `uc 1 ]
+[n S189 . . GO_NOT_DONE ]
+"4786
+[s S190 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S190 . ADON GO_nDONE CHS ]
+"4791
+[s S191 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S191 . . GO CHS0 CHS1 CHS2 CHS3 ]
+"4799
+[s S192 :1 `uc 1 :1 `uc 1 ]
+[n S192 . . DONE ]
+"4803
+[s S193 :1 `uc 1 :1 `uc 1 ]
+[n S193 . . NOT_DONE ]
+"4807
+[s S194 :1 `uc 1 :1 `uc 1 ]
+[n S194 . . nDONE ]
+"4811
+[s S195 :1 `uc 1 :1 `uc 1 ]
+[n S195 . . GO_DONE ]
+"4815
+[s S196 :1 `uc 1 :1 `uc 1 ]
+[n S196 . . GODONE ]
+"4781
+[u S188 `S189 1 `S190 1 `S191 1 `S192 1 `S193 1 `S194 1 `S195 1 `S196 1 ]
+[n S188 . . . . . . . . . ]
+"4820
+[v _ADCON0bits `VS188 ~T0 @X0 0 e@4034 ]
+"14 ./setting_hardaware/setting.h
+[; ;./setting_hardaware/setting.h: 14: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"34 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h: 34: char *strncpy (char *restrict, const char *restrict, size_t);
+[v _strncpy `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
+"5 ./setting_hardaware/uart.h
+[; ;./setting_hardaware/uart.h: 5: char * GetString();
+[v _GetString `(*uc ~T0 @X0 0 e? ]
+"39 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h: 39: int strcmp (const char *, const char *);
+[v _strcmp `(i ~T0 @X0 0 ef2`*Cuc`*Cuc ]
+"8 ./setting_hardaware/uart.h
+[; ;./setting_hardaware/uart.h: 8: void ClearBuffer();
+[v _ClearBuffer `(v ~T0 @X0 0 e? ]
+"7
+[; ;./setting_hardaware/uart.h: 7: void UART_Write_Text(char* text);
+[v _UART_Write_Text `(v ~T0 @X0 0 ef1`*uc ]
+"35 ./setting_hardaware/adc.h
+[; ;./setting_hardaware/adc.h: 35: int ADC_Read(int channel);
+[v _ADC_Read `(i ~T0 @X0 0 ef1`i ]
+"633 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\PIC18F4520.h
+[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.30\pic\include\builtins.h
+[v __delay `JF183 ~T0 @X0 0 e ]
+[p i __delay ]
+[t ~ __interrupt . k ]
+[t T41 __interrupt high_priority ]
+"2678 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\PIC18F4520.h
+[s S96 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S96 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF PSPIF ]
+"2688
+[s S97 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S97 . . TX1IF RC1IF ]
+"2677
+[u S95 `S96 1 `S97 1 ]
+[n S95 . . . ]
+"2694
+[v _PIR1bits `VS95 ~T0 @X0 0 e@3998 ]
+[t ~ __deprecated__ ]
+[t T1 __deprecated__ ]
+"8141
+[v _RC2 `Vb ~T1 @X0 0 e@31762 ]
+"3732
+[v _TMR3 `Vus ~T0 @X0 0 e@4018 ]
+"55 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\PIC18F4520.h
+[; <" PORTA equ 0F80h ;# ">
+"274
+[; <" PORTB equ 0F81h ;# ">
+"453
+[; <" PORTC equ 0F82h ;# ">
+"635
+[; <" PORTD equ 0F83h ;# ">
+"777
+[; <" PORTE equ 0F84h ;# ">
+"980
+[; <" LATA equ 0F89h ;# ">
+"1092
+[; <" LATB equ 0F8Ah ;# ">
+"1204
+[; <" LATC equ 0F8Bh ;# ">
+"1316
+[; <" LATD equ 0F8Ch ;# ">
+"1428
+[; <" LATE equ 0F8Dh ;# ">
+"1480
+[; <" TRISA equ 0F92h ;# ">
+"1485
+[; <" DDRA equ 0F92h ;# ">
+"1702
+[; <" TRISB equ 0F93h ;# ">
+"1707
+[; <" DDRB equ 0F93h ;# ">
+"1924
+[; <" TRISC equ 0F94h ;# ">
+"1929
+[; <" DDRC equ 0F94h ;# ">
+"2146
+[; <" TRISD equ 0F95h ;# ">
+"2151
+[; <" DDRD equ 0F95h ;# ">
+"2368
+[; <" TRISE equ 0F96h ;# ">
+"2373
+[; <" DDRE equ 0F96h ;# ">
+"2532
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2597
+[; <" PIE1 equ 0F9Dh ;# ">
+"2674
+[; <" PIR1 equ 0F9Eh ;# ">
+"2751
+[; <" IPR1 equ 0F9Fh ;# ">
+"2828
+[; <" PIE2 equ 0FA0h ;# ">
+"2894
+[; <" PIR2 equ 0FA1h ;# ">
+"2960
+[; <" IPR2 equ 0FA2h ;# ">
+"3026
+[; <" EECON1 equ 0FA6h ;# ">
+"3092
+[; <" EECON2 equ 0FA7h ;# ">
+"3099
+[; <" EEDATA equ 0FA8h ;# ">
+"3106
+[; <" EEADR equ 0FA9h ;# ">
+"3113
+[; <" RCSTA equ 0FABh ;# ">
+"3118
+[; <" RCSTA1 equ 0FABh ;# ">
+"3323
+[; <" TXSTA equ 0FACh ;# ">
+"3328
+[; <" TXSTA1 equ 0FACh ;# ">
+"3579
+[; <" TXREG equ 0FADh ;# ">
+"3584
+[; <" TXREG1 equ 0FADh ;# ">
+"3591
+[; <" RCREG equ 0FAEh ;# ">
+"3596
+[; <" RCREG1 equ 0FAEh ;# ">
+"3603
+[; <" SPBRG equ 0FAFh ;# ">
+"3608
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3615
+[; <" SPBRGH equ 0FB0h ;# ">
+"3622
+[; <" T3CON equ 0FB1h ;# ">
+"3734
+[; <" TMR3 equ 0FB2h ;# ">
+"3741
+[; <" TMR3L equ 0FB2h ;# ">
+"3748
+[; <" TMR3H equ 0FB3h ;# ">
+"3755
+[; <" CMCON equ 0FB4h ;# ">
+"3845
+[; <" CVRCON equ 0FB5h ;# ">
+"3924
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3929
+[; <" ECCPAS equ 0FB6h ;# ">
+"4086
+[; <" PWM1CON equ 0FB7h ;# ">
+"4091
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"4224
+[; <" BAUDCON equ 0FB8h ;# ">
+"4229
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4404
+[; <" CCP2CON equ 0FBAh ;# ">
+"4483
+[; <" CCPR2 equ 0FBBh ;# ">
+"4490
+[; <" CCPR2L equ 0FBBh ;# ">
+"4497
+[; <" CCPR2H equ 0FBCh ;# ">
+"4504
+[; <" CCP1CON equ 0FBDh ;# ">
+"4601
+[; <" CCPR1 equ 0FBEh ;# ">
+"4608
+[; <" CCPR1L equ 0FBEh ;# ">
+"4615
+[; <" CCPR1H equ 0FBFh ;# ">
+"4622
+[; <" ADCON2 equ 0FC0h ;# ">
+"4693
+[; <" ADCON1 equ 0FC1h ;# ">
+"4778
+[; <" ADCON0 equ 0FC2h ;# ">
+"4897
+[; <" ADRES equ 0FC3h ;# ">
+"4904
+[; <" ADRESL equ 0FC3h ;# ">
+"4911
+[; <" ADRESH equ 0FC4h ;# ">
+"4918
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5013
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5083
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5304
+[; <" SSPADD equ 0FC8h ;# ">
+"5311
+[; <" SSPBUF equ 0FC9h ;# ">
+"5318
+[; <" T2CON equ 0FCAh ;# ">
+"5416
+[; <" PR2 equ 0FCBh ;# ">
+"5421
+[; <" MEMCON equ 0FCBh ;# ">
+"5526
+[; <" TMR2 equ 0FCCh ;# ">
+"5533
+[; <" T1CON equ 0FCDh ;# ">
+"5636
+[; <" TMR1 equ 0FCEh ;# ">
+"5643
+[; <" TMR1L equ 0FCEh ;# ">
+"5650
+[; <" TMR1H equ 0FCFh ;# ">
+"5657
+[; <" RCON equ 0FD0h ;# ">
+"5790
+[; <" WDTCON equ 0FD1h ;# ">
+"5818
+[; <" HLVDCON equ 0FD2h ;# ">
+"5823
+[; <" LVDCON equ 0FD2h ;# ">
+"6088
+[; <" OSCCON equ 0FD3h ;# ">
+"6171
+[; <" T0CON equ 0FD5h ;# ">
+"6254
+[; <" TMR0 equ 0FD6h ;# ">
+"6261
+[; <" TMR0L equ 0FD6h ;# ">
+"6268
+[; <" TMR0H equ 0FD7h ;# ">
+"6275
+[; <" STATUS equ 0FD8h ;# ">
+"6346
+[; <" FSR2 equ 0FD9h ;# ">
+"6353
+[; <" FSR2L equ 0FD9h ;# ">
+"6360
+[; <" FSR2H equ 0FDAh ;# ">
+"6367
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6374
+[; <" PREINC2 equ 0FDCh ;# ">
+"6381
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6388
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6395
+[; <" INDF2 equ 0FDFh ;# ">
+"6402
+[; <" BSR equ 0FE0h ;# ">
+"6409
+[; <" FSR1 equ 0FE1h ;# ">
+"6416
+[; <" FSR1L equ 0FE1h ;# ">
+"6423
+[; <" FSR1H equ 0FE2h ;# ">
+"6430
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6437
+[; <" PREINC1 equ 0FE4h ;# ">
+"6444
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6451
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6458
+[; <" INDF1 equ 0FE7h ;# ">
+"6465
+[; <" WREG equ 0FE8h ;# ">
+"6477
+[; <" FSR0 equ 0FE9h ;# ">
+"6484
+[; <" FSR0L equ 0FE9h ;# ">
+"6491
+[; <" FSR0H equ 0FEAh ;# ">
+"6498
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6505
+[; <" PREINC0 equ 0FECh ;# ">
+"6512
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6519
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6526
+[; <" INDF0 equ 0FEFh ;# ">
+"6533
+[; <" INTCON3 equ 0FF0h ;# ">
+"6625
+[; <" INTCON2 equ 0FF1h ;# ">
+"6695
+[; <" INTCON equ 0FF2h ;# ">
+"6812
+[; <" PROD equ 0FF3h ;# ">
+"6819
+[; <" PRODL equ 0FF3h ;# ">
+"6826
+[; <" PRODH equ 0FF4h ;# ">
+"6833
+[; <" TABLAT equ 0FF5h ;# ">
+"6842
+[; <" TBLPTR equ 0FF6h ;# ">
+"6849
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6856
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6863
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6872
+[; <" PCLAT equ 0FF9h ;# ">
+"6879
+[; <" PC equ 0FF9h ;# ">
+"6886
+[; <" PCL equ 0FF9h ;# ">
+"6893
+[; <" PCLATH equ 0FFAh ;# ">
+"6900
+[; <" PCLATU equ 0FFBh ;# ">
+"6907
+[; <" STKPTR equ 0FFCh ;# ">
+"6981
+[; <" TOS equ 0FFDh ;# ">
+"6988
+[; <" TOSL equ 0FFDh ;# ">
+"6995
+[; <" TOSH equ 0FFEh ;# ">
+"7002
+[; <" TOSU equ 0FFFh ;# ">
+"8 main.c
+[p x OSC  =  INTIO67  ]
+"9
+[p x WDT  =  OFF      ]
+"10
+[p x PWRT  =  OFF     ]
+"13
+[p x LVP  =  OFF      ]
+"14
+[p x CPD  =  OFF      ]
+"25
+[; ;main.c: 25: char str[20];
+[v _str `uc ~T0 @X0 -> 20 `i e ]
+"27
+[; ;main.c: 27: void setBits(unsigned char a,unsigned char b,unsigned char c,unsigned char d,unsigned char e,unsigned char f,unsigned char g,unsigned char h){
+[v _setBits `(v ~T0 @X0 1 ef8`uc`uc`uc`uc`uc`uc`uc`uc ]
+{
+[e :U _setBits ]
+[v _a `uc ~T0 @X0 1 r1 ]
+[v _b `uc ~T0 @X0 1 r2 ]
+[v _c `uc ~T0 @X0 1 r3 ]
+[v _d `uc ~T0 @X0 1 r4 ]
+[v _e `uc ~T0 @X0 1 r5 ]
+[v _f `uc ~T0 @X0 1 r6 ]
+[v _g `uc ~T0 @X0 1 r7 ]
+[v _h `uc ~T0 @X0 1 r8 ]
+[f ]
+"28
+[; ;main.c: 28:     PORTCbits.RC0=a;
+[e = . . _PORTCbits 0 0 _a ]
+"29
+[; ;main.c: 29:     PORTCbits.RC1=b;
+[e = . . _PORTCbits 0 1 _b ]
+"30
+[; ;main.c: 30:     PORTEbits.RE0=c;
+[e = . . _PORTEbits 0 0 _c ]
+"31
+[; ;main.c: 31:     PORTCbits.RC3=d;
+[e = . . _PORTCbits 0 3 _d ]
+"32
+[; ;main.c: 32:     PORTCbits.RC4=e;
+[e = . . _PORTCbits 0 4 _e ]
+"33
+[; ;main.c: 33:     PORTCbits.RC5=f;
+[e = . . _PORTCbits 0 5 _f ]
+"34
+[; ;main.c: 34:     PORTEbits.RE1=g;
+[e = . . _PORTEbits 0 1 _g ]
+"35
+[; ;main.c: 35:     PORTEbits.RE2=h;
+[e = . . _PORTEbits 0 2 _h ]
+"36
+[; ;main.c: 36: }
+[e :UE 284 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"38
+[; ;main.c: 38: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"39
+[; ;main.c: 39: {
+{
+[e :U _main ]
+[f ]
+"43
+[; ;main.c: 43:     TRISD=0;
+[e = _TRISD -> -> 0 `i `uc ]
+"44
+[; ;main.c: 44:     TRISC=0;
+[e = _TRISC -> -> 0 `i `uc ]
+"45
+[; ;main.c: 45:     TRISE=0;
+[e = _TRISE -> -> 0 `i `uc ]
+"46
+[; ;main.c: 46:     TRISA=1;
+[e = _TRISA -> -> 1 `i `uc ]
+"47
+[; ;main.c: 47:     PORTC = 0;
+[e = _PORTC -> -> 0 `i `uc ]
+"49
+[; ;main.c: 49:     ADCON1bits.VCFG1=0b0;
+[e = . . _ADCON1bits 1 5 -> -> 0 `i `uc ]
+"50
+[; ;main.c: 50:     ADCON1bits.VCFG0=0b0;
+[e = . . _ADCON1bits 1 4 -> -> 0 `i `uc ]
+"52
+[; ;main.c: 52:     ADCON1bits.PCFG=0b1110;
+[e = . . _ADCON1bits 0 0 -> -> 14 `i `uc ]
+"56
+[; ;main.c: 56:     ADCON2bits.ADCS=0b100;
+[e = . . _ADCON2bits 0 0 -> -> 4 `i `uc ]
+"58
+[; ;main.c: 58:     ADCON2bits.ACQT=0b010;
+[e = . . _ADCON2bits 0 1 -> -> 2 `i `uc ]
+"60
+[; ;main.c: 60:     ADCON0bits.ADON=0b1;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+"62
+[; ;main.c: 62:     ADCON2bits.ADFM=0b0;
+[e = . . _ADCON2bits 0 3 -> -> 0 `i `uc ]
+"72
+[; ;main.c: 72:     SYSTEM_Initialize() ;
+[e ( _SYSTEM_Initialize ..  ]
+"73
+[; ;main.c: 73:     int check = 0;
+[v _check `i ~T0 @X0 1 a ]
+[e = _check -> 0 `i ]
+"76
+[; ;main.c: 76:     while(1) {
+[e :U 287 ]
+{
+"78
+[; ;main.c: 78:         strncpy(str,GetString(),5);
+[e ( _strncpy (3 , , &U _str -> ( _GetString ..  `*Cuc -> -> 5 `i `ui ]
+"79
+[; ;main.c: 79:         str[5]='\0';
+[e = *U + &U _str * -> -> -> 5 `i `ui `ux -> -> # *U &U _str `ui `ux -> -> 0 `ui `uc ]
+"80
+[; ;main.c: 80:         if(strcmp(str,"start") == 0) {
+[e $ ! == ( _strcmp (2 , -> &U _str `*Cuc :s 1C -> 0 `i 289  ]
+{
+"81
+[; ;main.c: 81:             ClearBuffer();
+[e ( _ClearBuffer ..  ]
+"82
+[; ;main.c: 82:             UART_Write_Text("\nOne day a girl is ");
+[e ( _UART_Write_Text (1 :s 2C ]
+"83
+[; ;main.c: 83:             ClearBuffer();
+[e ( _ClearBuffer ..  ]
+"84
+[; ;main.c: 84:         }
+}
+[e :U 289 ]
+"85
+[; ;main.c: 85:         unsigned int x = ADC_Read(0);
+[v _x `ui ~T0 @X0 1 a ]
+[e = _x -> ( _ADC_Read (1 -> 0 `i `ui ]
+"93
+[; ;main.c: 93:         if(0<=x&&x<23){
+[e $ ! && <= -> -> 0 `i `ui _x < _x -> -> 23 `i `ui 290  ]
+{
+"94
+[; ;main.c: 94:             if(check == 0) {
+[e $ ! == _check -> 0 `i 291  ]
+{
+"95
+[; ;main.c: 95:                 UART_Write_Text("walking, ");
+[e ( _UART_Write_Text (1 :s 3C ]
+"96
+[; ;main.c: 96:                 check = 1;
+[e = _check -> 1 `i ]
+"97
+[; ;main.c: 97:             }
+}
+[e :U 291 ]
+"98
+[; ;main.c: 98:             PORTD = 0b01111111;
+[e = _PORTD -> -> 127 `i `uc ]
+"99
+[; ;main.c: 99:             setBits(0,1,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"100
+[; ;main.c: 100:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"101
+[; ;main.c: 101:             PORTD = 0b10111111;
+[e = _PORTD -> -> 191 `i `uc ]
+"102
+[; ;main.c: 102:             setBits(0,0,1,0,0,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"103
+[; ;main.c: 103:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"104
+[; ;main.c: 104:             PORTD = 0b11011111;
+[e = _PORTD -> -> 223 `i `uc ]
+"105
+[; ;main.c: 105:             setBits(1,1,0,1,0,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"106
+[; ;main.c: 106:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"107
+[; ;main.c: 107:             PORTD = 0b11101111;
+[e = _PORTD -> -> 239 `i `uc ]
+"108
+[; ;main.c: 108:             setBits(1,1,1,1,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"109
+[; ;main.c: 109:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"110
+[; ;main.c: 110:             PORTD = 0b11110111;
+[e = _PORTD -> -> 247 `i `uc ]
+"111
+[; ;main.c: 111:             setBits(1,1,0,1,0,1,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"112
+[; ;main.c: 112:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"113
+[; ;main.c: 113:             PORTD = 0b11111011;
+[e = _PORTD -> -> 251 `i `uc ]
+"114
+[; ;main.c: 114:             setBits(0,0,0,1,0,0,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"115
+[; ;main.c: 115:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"116
+[; ;main.c: 116:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"117
+[; ;main.c: 117:             setBits(0,0,0,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"118
+[; ;main.c: 118:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"119
+[; ;main.c: 119:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"120
+[; ;main.c: 120:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"121
+[; ;main.c: 121:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"122
+[; ;main.c: 122:         }
+}
+[e :U 290 ]
+"123
+[; ;main.c: 123:         if(23<=x&&x<46){
+[e $ ! && <= -> -> 23 `i `ui _x < _x -> -> 46 `i `ui 292  ]
+{
+"124
+[; ;main.c: 124:             if(check == 1) {
+[e $ ! == _check -> 1 `i 293  ]
+{
+"125
+[; ;main.c: 125:                 UART_Write_Text("walking, ");
+[e ( _UART_Write_Text (1 :s 4C ]
+"126
+[; ;main.c: 126:                 check = 0;
+[e = _check -> 0 `i ]
+"127
+[; ;main.c: 127:             }
+}
+[e :U 293 ]
+"128
+[; ;main.c: 128:             PORTD = 0b00111111;
+[e = _PORTD -> -> 63 `i `uc ]
+"129
+[; ;main.c: 129:             setBits(0,0,0,1,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"130
+[; ;main.c: 130:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"131
+[; ;main.c: 131:             PORTD = 0b11011111;
+[e = _PORTD -> -> 223 `i `uc ]
+"132
+[; ;main.c: 132:             setBits(1,1,0,1,0,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"133
+[; ;main.c: 133:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"134
+[; ;main.c: 134:             PORTD = 0b11101111;
+[e = _PORTD -> -> 239 `i `uc ]
+"135
+[; ;main.c: 135:             setBits(1,1,1,1,1,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"136
+[; ;main.c: 136:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"137
+[; ;main.c: 137:             PORTD = 0b11110111;
+[e = _PORTD -> -> 247 `i `uc ]
+"138
+[; ;main.c: 138:             setBits(1,1,0,1,0,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"139
+[; ;main.c: 139:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"140
+[; ;main.c: 140:             PORTD = 0b11111011;
+[e = _PORTD -> -> 251 `i `uc ]
+"141
+[; ;main.c: 141:             setBits(0,0,0,0,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"142
+[; ;main.c: 142:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"143
+[; ;main.c: 143:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"144
+[; ;main.c: 144:             setBits(0,0,0,0,0,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"145
+[; ;main.c: 145:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"146
+[; ;main.c: 146:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"147
+[; ;main.c: 147:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"148
+[; ;main.c: 148:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"149
+[; ;main.c: 149:         }
+}
+[e $U 294  ]
+"150
+[; ;main.c: 150:         else if(46<=x&&x<69){
+[e :U 292 ]
+[e $ ! && <= -> -> 46 `i `ui _x < _x -> -> 69 `i `ui 295  ]
+{
+"151
+[; ;main.c: 151:             if(check == 0) {
+[e $ ! == _check -> 0 `i 296  ]
+{
+"152
+[; ;main.c: 152:                 UART_Write_Text("then she felt thirsty, so she decided to buy a bubble tea, ");
+[e ( _UART_Write_Text (1 :s 5C ]
+"153
+[; ;main.c: 153:                 check = 1;
+[e = _check -> 1 `i ]
+"154
+[; ;main.c: 154:             }
+}
+[e :U 296 ]
+"155
+[; ;main.c: 155:             PORTD = 0b01111111;
+[e = _PORTD -> -> 127 `i `uc ]
+"156
+[; ;main.c: 156:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"157
+[; ;main.c: 157:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"158
+[; ;main.c: 158:             PORTD = 0b10111111;
+[e = _PORTD -> -> 191 `i `uc ]
+"159
+[; ;main.c: 159:             setBits(0,0,1,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"160
+[; ;main.c: 160:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"161
+[; ;main.c: 161:             PORTD = 0b11001111;
+[e = _PORTD -> -> 207 `i `uc ]
+"162
+[; ;main.c: 162:             setBits(0,0,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"163
+[; ;main.c: 163:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"164
+[; ;main.c: 164:             PORTD = 0b11110111;
+[e = _PORTD -> -> 247 `i `uc ]
+"165
+[; ;main.c: 165:             setBits(1,1,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"166
+[; ;main.c: 166:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"167
+[; ;main.c: 167:             PORTD = 0b11111011;
+[e = _PORTD -> -> 251 `i `uc ]
+"168
+[; ;main.c: 168:             setBits(1,0,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"169
+[; ;main.c: 169:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"170
+[; ;main.c: 170:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"171
+[; ;main.c: 171:             setBits(1,0,1,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"172
+[; ;main.c: 172:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"173
+[; ;main.c: 173:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"174
+[; ;main.c: 174:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"175
+[; ;main.c: 175:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"176
+[; ;main.c: 176:         }
+}
+[e $U 297  ]
+"177
+[; ;main.c: 177:         else if(69<=x&&x<92){
+[e :U 295 ]
+[e $ ! && <= -> -> 69 `i `ui _x < _x -> -> 92 `i `ui 298  ]
+{
+"178
+[; ;main.c: 178:             if(check == 1) {
+[e $ ! == _check -> 1 `i 299  ]
+{
+"179
+[; ;main.c: 179:                 UART_Write_Text("after she got the drink, ");
+[e ( _UART_Write_Text (1 :s 6C ]
+"180
+[; ;main.c: 180:                 check = 0;
+[e = _check -> 0 `i ]
+"181
+[; ;main.c: 181:             }
+}
+[e :U 299 ]
+"182
+[; ;main.c: 182:             PORTD = 0b01110111;
+[e = _PORTD -> -> 119 `i `uc ]
+"183
+[; ;main.c: 183:             setBits(0,0,0,1,0,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"184
+[; ;main.c: 184:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"185
+[; ;main.c: 185:             PORTD = 0b10101111;
+[e = _PORTD -> -> 175 `i `uc ]
+"186
+[; ;main.c: 186:             setBits(1,1,1,0,1,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"187
+[; ;main.c: 187:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"188
+[; ;main.c: 188:             PORTD = 0b11011111;
+[e = _PORTD -> -> 223 `i `uc ]
+"189
+[; ;main.c: 189:             setBits(1,1,1,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"190
+[; ;main.c: 190:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"191
+[; ;main.c: 191:             PORTD = 0b11111000;
+[e = _PORTD -> -> 248 `i `uc ]
+"192
+[; ;main.c: 192:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"193
+[; ;main.c: 193:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"194
+[; ;main.c: 194:         }
+}
+[e $U 300  ]
+"195
+[; ;main.c: 195:         else if(92<=x&&x<115){
+[e :U 298 ]
+[e $ ! && <= -> -> 92 `i `ui _x < _x -> -> 115 `i `ui 301  ]
+{
+"196
+[; ;main.c: 196:             if(check == 0) {
+[e $ ! == _check -> 0 `i 302  ]
+{
+"197
+[; ;main.c: 197:                 UART_Write_Text("she was too excited ");
+[e ( _UART_Write_Text (1 :s 7C ]
+"198
+[; ;main.c: 198:                 check = 1;
+[e = _check -> 1 `i ]
+"199
+[; ;main.c: 199:             }
+}
+[e :U 302 ]
+"200
+[; ;main.c: 200:             PORTD = 0b01111111;
+[e = _PORTD -> -> 127 `i `uc ]
+"201
+[; ;main.c: 201:             setBits(0,0,0,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"202
+[; ;main.c: 202:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"203
+[; ;main.c: 203:             PORTD = 0b10111111;
+[e = _PORTD -> -> 191 `i `uc ]
+"204
+[; ;main.c: 204:             setBits(0,0,0,0,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"205
+[; ;main.c: 205:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"206
+[; ;main.c: 206:             PORTD = 0b11011111;
+[e = _PORTD -> -> 223 `i `uc ]
+"207
+[; ;main.c: 207:             setBits(0,1,1,0,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"208
+[; ;main.c: 208:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"209
+[; ;main.c: 209:             PORTD = 0b11101111;
+[e = _PORTD -> -> 239 `i `uc ]
+"210
+[; ;main.c: 210:             setBits(0,0,0,1,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"211
+[; ;main.c: 211:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"212
+[; ;main.c: 212:             PORTD = 0b11110011;
+[e = _PORTD -> -> 243 `i `uc ]
+"213
+[; ;main.c: 213:             setBits(1,1,1,0,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"214
+[; ;main.c: 214:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"215
+[; ;main.c: 215:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"216
+[; ;main.c: 216:             setBits(1,1,1,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"217
+[; ;main.c: 217:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"218
+[; ;main.c: 218:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"219
+[; ;main.c: 219:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"220
+[; ;main.c: 220:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"221
+[; ;main.c: 221:         }
+}
+[e $U 303  ]
+"222
+[; ;main.c: 222:         else if(115<=x&&x<138){
+[e :U 301 ]
+[e $ ! && <= -> -> 115 `i `ui _x < _x -> -> 138 `i `ui 304  ]
+{
+"223
+[; ;main.c: 223:             if(check == 1) {
+[e $ ! == _check -> 1 `i 305  ]
+{
+"224
+[; ;main.c: 224:                 UART_Write_Text("that all of a sudden she fall down ");
+[e ( _UART_Write_Text (1 :s 8C ]
+"225
+[; ;main.c: 225:                 check = 0;
+[e = _check -> 0 `i ]
+"226
+[; ;main.c: 226:             }
+}
+[e :U 305 ]
+"227
+[; ;main.c: 227:             PORTD = 0b01111111;
+[e = _PORTD -> -> 127 `i `uc ]
+"228
+[; ;main.c: 228:             setBits(0,0,1,0,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"229
+[; ;main.c: 229:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"230
+[; ;main.c: 230:             PORTD = 0b10111111;
+[e = _PORTD -> -> 191 `i `uc ]
+"231
+[; ;main.c: 231:             setBits(0,0,0,1,0,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"232
+[; ;main.c: 232:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"233
+[; ;main.c: 233:             PORTD = 0b11011111;
+[e = _PORTD -> -> 223 `i `uc ]
+"234
+[; ;main.c: 234:             setBits(0,0,0,0,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"235
+[; ;main.c: 235:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"236
+[; ;main.c: 236:             PORTD = 0b11101111;
+[e = _PORTD -> -> 239 `i `uc ]
+"237
+[; ;main.c: 237:             setBits(0,0,0,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"238
+[; ;main.c: 238:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"239
+[; ;main.c: 239:             PORTD = 0b11110111;
+[e = _PORTD -> -> 247 `i `uc ]
+"240
+[; ;main.c: 240:             setBits(0,0,1,0,1,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"241
+[; ;main.c: 241:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"242
+[; ;main.c: 242:             PORTD = 0b11111011;
+[e = _PORTD -> -> 251 `i `uc ]
+"243
+[; ;main.c: 243:             setBits(0,0,0,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"244
+[; ;main.c: 244:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"245
+[; ;main.c: 245:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"246
+[; ;main.c: 246:             setBits(0,0,0,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"247
+[; ;main.c: 247:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"248
+[; ;main.c: 248:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"249
+[; ;main.c: 249:             setBits(0,0,0,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"250
+[; ;main.c: 250:             _delay((unsigned long)((10)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"251
+[; ;main.c: 251:         }
+}
+[e $U 306  ]
+"252
+[; ;main.c: 252:         else if(138<=x&&x<161){
+[e :U 304 ]
+[e $ ! && <= -> -> 138 `i `ui _x < _x -> -> 161 `i `ui 307  ]
+{
+"253
+[; ;main.c: 253:             if(check == 0) {
+[e $ ! == _check -> 0 `i 308  ]
+{
+"254
+[; ;main.c: 254:                 UART_Write_Text("at the same time the drink ");
+[e ( _UART_Write_Text (1 :s 9C ]
+"255
+[; ;main.c: 255:                 check = 1;
+[e = _check -> 1 `i ]
+"256
+[; ;main.c: 256:             }
+}
+[e :U 308 ]
+"257
+[; ;main.c: 257:             PORTD = 0b01111111;
+[e = _PORTD -> -> 127 `i `uc ]
+"258
+[; ;main.c: 258:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"259
+[; ;main.c: 259:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"260
+[; ;main.c: 260:             PORTD = 0b10111111;
+[e = _PORTD -> -> 191 `i `uc ]
+"261
+[; ;main.c: 261:             setBits(0,0,1,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"262
+[; ;main.c: 262:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"263
+[; ;main.c: 263:             PORTD = 0b11001111;
+[e = _PORTD -> -> 207 `i `uc ]
+"264
+[; ;main.c: 264:             setBits(0,0,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"265
+[; ;main.c: 265:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"266
+[; ;main.c: 266:             PORTD = 0b11110111;
+[e = _PORTD -> -> 247 `i `uc ]
+"267
+[; ;main.c: 267:             setBits(1,1,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"268
+[; ;main.c: 268:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"269
+[; ;main.c: 269:             PORTD = 0b11111011;
+[e = _PORTD -> -> 251 `i `uc ]
+"270
+[; ;main.c: 270:             setBits(1,0,1,1,1,1,1,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"271
+[; ;main.c: 271:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"272
+[; ;main.c: 272:             PORTD = 0b11111101;
+[e = _PORTD -> -> 253 `i `uc ]
+"273
+[; ;main.c: 273:             setBits(1,0,1,1,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"274
+[; ;main.c: 274:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"275
+[; ;main.c: 275:             PORTD = 0b11111110;
+[e = _PORTD -> -> 254 `i `uc ]
+"276
+[; ;main.c: 276:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"277
+[; ;main.c: 277:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"278
+[; ;main.c: 278:         }
+}
+[e $U 309  ]
+"279
+[; ;main.c: 279:         else if(161<=x&&x<184){
+[e :U 307 ]
+[e $ ! && <= -> -> 161 `i `ui _x < _x -> -> 184 `i `ui 310  ]
+{
+"280
+[; ;main.c: 280:             if(check == 1) {
+[e $ ! == _check -> 1 `i 311  ]
+{
+"281
+[; ;main.c: 281:                 UART_Write_Text("is split, ");
+[e ( _UART_Write_Text (1 :s 10C ]
+"282
+[; ;main.c: 282:                 check = 0;
+[e = _check -> 0 `i ]
+"283
+[; ;main.c: 283:             }
+}
+[e :U 311 ]
+"284
+[; ;main.c: 284:             PORTD = 0b10111101;
+[e = _PORTD -> -> 189 `i `uc ]
+"285
+[; ;main.c: 285:             setBits(0,1,0,0,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"286
+[; ;main.c: 286:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"287
+[; ;main.c: 287:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"288
+[; ;main.c: 288:             setBits(0,0,1,0,0,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"289
+[; ;main.c: 289:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"290
+[; ;main.c: 290:             PORTD = 0b11100111;
+[e = _PORTD -> -> 231 `i `uc ]
+"291
+[; ;main.c: 291:             setBits(0,0,0,1,1,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"292
+[; ;main.c: 292:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"293
+[; ;main.c: 293:             PORTD = 0b01111110;
+[e = _PORTD -> -> 126 `i `uc ]
+"294
+[; ;main.c: 294:             setBits(1,0,0,0,0,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"295
+[; ;main.c: 295:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"296
+[; ;main.c: 296:         }
+}
+[e $U 312  ]
+"297
+[; ;main.c: 297:         else if(184<=x&&x<210){
+[e :U 310 ]
+[e $ ! && <= -> -> 184 `i `ui _x < _x -> -> 210 `i `ui 313  ]
+{
+"298
+[; ;main.c: 298:             if(check == 0) {
+[e $ ! == _check -> 0 `i 314  ]
+{
+"299
+[; ;main.c: 299:                 UART_Write_Text("she was so sad QQ, ");
+[e ( _UART_Write_Text (1 :s 11C ]
+"300
+[; ;main.c: 300:                 check = 1;
+[e = _check -> 1 `i ]
+"301
+[; ;main.c: 301:             }
+}
+[e :U 314 ]
+"302
+[; ;main.c: 302:             PORTD = 0b01111110;
+[e = _PORTD -> -> 126 `i `uc ]
+"303
+[; ;main.c: 303:             setBits(0,0,1,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"304
+[; ;main.c: 304:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"305
+[; ;main.c: 305:             PORTD = 0b10111101;
+[e = _PORTD -> -> 189 `i `uc ]
+"306
+[; ;main.c: 306:             setBits(0,1,0,0,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"307
+[; ;main.c: 307:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"308
+[; ;main.c: 308:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"309
+[; ;main.c: 309:             setBits(1,0,1,0,0,1,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"310
+[; ;main.c: 310:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"311
+[; ;main.c: 311:             PORTD = 0b11100111;
+[e = _PORTD -> -> 231 `i `uc ]
+"312
+[; ;main.c: 312:             setBits(1,0,0,0,1,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"313
+[; ;main.c: 313:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"314
+[; ;main.c: 314:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"315
+[; ;main.c: 315:             setBits(0,0,1,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"316
+[; ;main.c: 316:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"317
+[; ;main.c: 317:         }
+}
+[e $U 315  ]
+"318
+[; ;main.c: 318:         else if(210<=x&&x<233){
+[e :U 313 ]
+[e $ ! && <= -> -> 210 `i `ui _x < _x -> -> 233 `i `ui 316  ]
+{
+"319
+[; ;main.c: 319:             if(check == 1) {
+[e $ ! == _check -> 1 `i 317  ]
+{
+"320
+[; ;main.c: 320:                 UART_Write_Text("but the salesperson told her that she was the 101st person to split the drink here, ");
+[e ( _UART_Write_Text (1 :s 12C ]
+"321
+[; ;main.c: 321:                 check = 0;
+[e = _check -> 0 `i ]
+"322
+[; ;main.c: 322:             }
+}
+[e :U 317 ]
+"323
+[; ;main.c: 323:             PORTD = 0b01111110;
+[e = _PORTD -> -> 126 `i `uc ]
+"324
+[; ;main.c: 324:             setBits(0,1,1,1,1,1,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"325
+[; ;main.c: 325:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"326
+[; ;main.c: 326:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"327
+[; ;main.c: 327:             setBits(0,0,1,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"328
+[; ;main.c: 328:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"329
+[; ;main.c: 329:             PORTD = 0b11100111;
+[e = _PORTD -> -> 231 `i `uc ]
+"330
+[; ;main.c: 330:             setBits(0,1,0,0,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"331
+[; ;main.c: 331:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"332
+[; ;main.c: 332:             PORTD = 0b10111101;
+[e = _PORTD -> -> 189 `i `uc ]
+"333
+[; ;main.c: 333:             setBits(0,0,0,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"334
+[; ;main.c: 334:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"335
+[; ;main.c: 335:         }
+}
+[e $U 318  ]
+"336
+[; ;main.c: 336:         else if(233<=x){
+[e :U 316 ]
+[e $ ! <= -> -> 233 `i `ui _x 319  ]
+{
+"337
+[; ;main.c: 337:             if(check == 0) {
+[e $ ! == _check -> 0 `i 320  ]
+{
+"338
+[; ;main.c: 338:                 UART_Write_Text("so she got a brand new drink. > < ");
+[e ( _UART_Write_Text (1 :s 13C ]
+"339
+[; ;main.c: 339:                 check = 1;
+[e = _check -> 1 `i ]
+"340
+[; ;main.c: 340:             }
+}
+[e :U 320 ]
+"341
+[; ;main.c: 341:             PORTD = 0b01111110;
+[e = _PORTD -> -> 126 `i `uc ]
+"342
+[; ;main.c: 342:             setBits(0,0,1,1,1,1,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"343
+[; ;main.c: 343:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"344
+[; ;main.c: 344:             PORTD = 0b10111101;
+[e = _PORTD -> -> 189 `i `uc ]
+"345
+[; ;main.c: 345:             setBits(0,1,0,0,0,0,1,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"346
+[; ;main.c: 346:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"347
+[; ;main.c: 347:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"348
+[; ;main.c: 348:             setBits(1,0,1,0,1,0,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"349
+[; ;main.c: 349:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"350
+[; ;main.c: 350:             PORTD = 0b11100111;
+[e = _PORTD -> -> 231 `i `uc ]
+"351
+[; ;main.c: 351:             setBits(1,0,0,0,0,1,0,1);
+[e ( _setBits (4 , , , , , , , -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"352
+[; ;main.c: 352:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"353
+[; ;main.c: 353:             PORTD = 0b11011011;
+[e = _PORTD -> -> 219 `i `uc ]
+"354
+[; ;main.c: 354:             setBits(0,0,1,0,0,0,0,0);
+[e ( _setBits (4 , , , , , , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"355
+[; ;main.c: 355:             _delay((unsigned long)((30)*(200000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 200000 `l `d .4000.0 `ul ]
+"356
+[; ;main.c: 356:         }
+}
+[e :U 319 ]
+[e :U 318 ]
+[e :U 315 ]
+[e :U 312 ]
+[e :U 309 ]
+[e :U 306 ]
+[e :U 303 ]
+[e :U 300 ]
+[e :U 297 ]
+[e :U 294 ]
+"394
+[; ;main.c: 394:     }
+}
+[e :U 286 ]
+[e $U 287  ]
+[e :U 288 ]
+"395
+[; ;main.c: 395:     return;
+[e $UE 285  ]
+"396
+[; ;main.c: 396: }
+[e :UE 285 ]
+}
+[v $root$_Hi_ISR `(v ~T0 @X0 0 e ]
+"400
+[; ;main.c: 400: void __attribute__((picinterrupt(("high_priority")))) Hi_ISR(void)
+[v _Hi_ISR `(v ~T41 @X0 1 ef ]
+"401
+[; ;main.c: 401: {
+{
+[e :U _Hi_ISR ]
+[f ]
+"402
+[; ;main.c: 402:      if(PIR1bits.CCP1IF == 1) {
+[e $ ! == -> . . _PIR1bits 0 2 `i -> 1 `i 322  ]
+{
+"403
+[; ;main.c: 403:         RC2 ^= 1;
+[e =^ _RC2 -> -> -> 1 `i `b `Vb ]
+"404
+[; ;main.c: 404:         PIR1bits.CCP1IF = 0;
+[e = . . _PIR1bits 0 2 -> -> 0 `i `uc ]
+"405
+[; ;main.c: 405:         TMR3 = 0;
+[e = _TMR3 -> -> 0 `i `us ]
+"406
+[; ;main.c: 406:     }
+}
+[e :U 322 ]
+"821
+[; ;main.c: 821:     return;
+[e $UE 321  ]
+"822
+[; ;main.c: 822: }
+[e :UE 321 ]
+}
+[a 1C 115 116 97 114 116 0 ]
+[a 2C 10 79 110 101 32 100 97 121 32 97 32 103 105 114 108 32 105 115 32 0 ]
+[a 8C 116 104 97 116 32 97 108 108 32 111 102 32 97 32 115 117 100 100 101 110 32 115 104 101 32 102 97 108 108 32 100 111 119 110 32 0 ]
+[a 9C 97 116 32 116 104 101 32 115 97 109 101 32 116 105 109 101 32 116 104 101 32 100 114 105 110 107 32 0 ]
+[a 7C 115 104 101 32 119 97 115 32 116 111 111 32 101 120 99 105 116 101 100 32 0 ]
+[a 13C 115 111 32 115 104 101 32 103 111 116 32 97 32 98 114 97 110 100 32 110 101 119 32 100 114 105 110 107 46 32 62 32 60 32 0 ]
+[a 10C 105 115 32 115 112 108 105 116 44 32 0 ]
+[a 6C 97 102 116 101 114 32 115 104 101 32 103 111 116 32 116 104 101 32 100 114 105 110 107 44 32 0 ]
+[a 3C 119 97 108 107 105 110 103 44 32 0 ]
+[a 4C 119 97 108 107 105 110 103 44 32 0 ]
+[a 12C 98 117 116 32 116 104 101 32 115 97 108 101 115 112 101 114 115 111 110 32 116 111 108 100 32 104 101 114 32 116 104 97 116 32 115 104 101 32 119 97 115 32 116 104 101 32 49 48 49 115 116 32 112 101 114 115 111 110 32 116 111 32 115 112 108 105 116 32 116 104 101 32 100 114 105 110 107 32 104 101 114 101 44 32 0 ]
+[a 5C 116 104 101 110 32 115 104 101 32 102 101 108 116 32 116 104 105 114 115 116 121 44 32 115 111 32 115 104 101 32 100 101 99 105 100 101 100 32 116 111 32 98 117 121 32 97 32 98 117 98 98 108 101 32 116 101 97 44 32 0 ]
+[a 11C 115 104 101 32 119 97 115 32 115 111 32 115 97 100 32 81 81 44 32 0 ]
