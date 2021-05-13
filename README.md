@@ -10,7 +10,7 @@ The dot matrix is used as the screen of the story book, the UART is used as the 
 ## C. Demo video: https://youtu.be/1ZEaAyQWCzQ
 
 ## D. Appearance:
-![]<img src="https://i.imgur.com/73gXQOJ.jpg" width="1200" height="1000"/>
+![]<img src="https://i.imgur.com/73gXQOJ.jpg" width="500" height="500"/>
 
 ![](https://i.imgur.com/Aeak4lX.jpg)
 
