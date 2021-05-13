@@ -11,11 +11,14 @@ The dot matrix is used as the screen of the story book, the UART is used as the 
 
 ## D. Appearance:
 ![](https://i.imgur.com/73gXQOJ.jpg)
+
 ![](https://i.imgur.com/Aeak4lX.jpg)
+
 ![](https://i.imgur.com/h9vgquR.jpg)
 
 ## E. Circuit Diagram:
 ![](https://i.imgur.com/jNgUHhG.png)
+
 ![](https://i.imgur.com/AGMBnX1.png)
 
 ## F. Flow Chat:
