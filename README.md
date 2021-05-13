@@ -10,24 +10,19 @@ The dot matrix is used as the screen of the story book, the UART is used as the 
 ## C. Demo video: https://youtu.be/1ZEaAyQWCzQ
 
 ## D. Appearance:
-![](https://i.imgur.com/73gXQOJ.jpg)
-![](https://i.imgur.com/h9vgquRs.jpg)
-![](https://i.imgur.com/h9vgquRb.jpg)
-![](https://i.imgur.com/h9vgquRl.jpg)
+![](https://i.imgur.com/73gXQOJh.jpg)
+
+![](https://i.imgur.com/Aeak4lXh.jpg)
+
 ![](https://i.imgur.com/h9vgquRh.jpg)
-<img src="https://i.imgur.com/73gXQOJ.jpg" width="1235" height="881"/>
-
-![](https://i.imgur.com/Aeak4lX.jpg)
-
-![](https://i.imgur.com/h9vgquR.jpg)
 
 ## E. Circuit Diagram:
-![](https://i.imgur.com/jNgUHhG.png)
+![](https://i.imgur.com/jNgUHhGh.png)
 
-![](https://i.imgur.com/AGMBnX1.png)
+![](https://i.imgur.com/AGMBnX1h.png)
 
 ## F. Flow Chat:
-![](https://i.imgur.com/1QwORoL.jpg)
+![](https://i.imgur.com/1QwORoLh.jpg)
 
 ## G. System development tools, materials and techniques
 - Tools: MPLAB, Pickit4 burner, PIC18f4520 chip, 8x8 point matrix, variable resistor, 
